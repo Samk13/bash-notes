@@ -11,3 +11,5 @@ https://github.com/HariSekhon/DevOps-Bash-tools/blob/2e61f3d7e0c7445a8fa3f13355f
 https://github.com/vqcuong/bigdata-artifact/blob/77386842bc6932872728bb6e27110c54bc267543/git-sync/docker/git-clone.sh
 
 
+- chmod 400 ~/.ssh/id_rsa
+- ssh -i ~/.ssh/id_rsa server@hostname "bash -s" < ./git-clone.sh
