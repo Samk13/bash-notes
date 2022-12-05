@@ -3,12 +3,13 @@
 release_file=/etc/os-release
 
 # if [ -d /etc/pacman.d ] # or you can write it like
+# grep -q -> q quite mode: no print on screen
 if grep -q "Arch" $release_file; then
     echo this is an arch linux system
 fi
 
 # if [ -d /etc/apt ]
-if grep -q "Ubuntu" $release_file; then
+if grep -q "Ubuntu" $release_file || grep -q "Debian" $release_file; then
     echo "updating packages ..."
     sudo apt update
     echo "Updating succussfull with code $?"
