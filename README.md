@@ -29,5 +29,18 @@ echo $? # if exit code is 0 the command is successfull, otherwise there is somth
 # While loop:
 
 ```bash
-
+while [ -f $file ]
+do
+    echo "file exists $(date)"
+    sleep 5
+done
 ```
+
+# Data stream:
+number 1 -> standard output
+number 2 -> standard error
+
+```bash
+find /etc -type f 2> /dev/null  # redirect err to linux special place dev/null where if you move something there it will be completely wiped out like a block hole
+```
+
