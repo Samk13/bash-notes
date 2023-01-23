@@ -39,8 +39,15 @@ done
 # Data stream:
 number 1 -> standard output
 number 2 -> standard error
+diffrence between 1> /path, and 1>> /path is the second one with double >> is append to the file localtion the first one will override everything
 
 ```bash
 find /etc -type f 2> /dev/null  # redirect err to linux special place dev/null where if you move something there it will be completely wiped out like a block hole
+find /etc -type f &> /dev/null # redirect both standard output and standard error to the specified location
 ```
 
+# Functions:
+
+```bash
+
+```
