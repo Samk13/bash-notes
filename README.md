@@ -46,8 +46,10 @@ find /etc -type f 2> /dev/null  # redirect err to linux special place dev/null w
 find /etc -type f &> /dev/null # redirect both standard output and standard error to the specified location
 ```
 
-# Functions:
+# Commands:
+
+For testing upload files with specific size you can use:
 
 ```bash
-
+fallocate -l 9.99G test10Gfile
 ```
