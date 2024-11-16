@@ -1,0 +1,3 @@
+# Autocomplete for PDB debugger in python
+import rlcompleter
+__import__('pdb').Pdb.complete = rlcompleter.Completer(locals()).complete
